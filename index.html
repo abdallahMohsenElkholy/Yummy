@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Recipe</title>
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <div id="nav" class="d-flex justify-content-between ">
+        <div class="menue d-flex flex-column justify-content-between bg-black ps-3">
+            <ul class="list-unstyled position-relative">
+                <li class="link1"><a href="#Search">Search</a></li>
+                <li class="link2"><a href="#Category">Categories</a></li>
+                <li class="link3"><a href="#Area">Area</a></li>
+                <li class="link4"><a href="#Ingredients">Ingredients</a></li>
+                <li class="link5"><a href="#Contact">Contact Us</a></li>
+            </ul>
+            <div class="social">
+                <div>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p class="text-white-50">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="nav-bar d-flex flex-column justify-content-between py-5">
+            <div class="img text-center">
+                <img src="img/logo.png" class='w-100' alt="">
+            </div>
+            <div class="icon text-center">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="text-center">
+                <div><i class="fa-solid fa-globe"></i></div>
+                <div><i class="fa-solid fa-share-nodes"></i></div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /// -->
+
+    <!-- contact -->
+    <div id="contact">
+        <div class=" w-85">
+            <div class="row p-5">
+                <h2 class="text-light  ms-5text-center mb-5">ContacUs...</h2>
+                <div class="col-sm-6 col-lg-3">
+                    <input id="inp0" type="text"
+                        class="form-control text-white-50 rounded-0 bg-black  mt-2 border-bottom border-2 "
+                        placeholder="Enter Your Name">
+                    <p id="err0" class="pb-3 mt-1 alert alert-danger text-danger">Special Characters and Numbers not
+                        allowed</p>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <input id="inp1" type="text"
+                        class="form-control text-white-50 rounded-0 bg-black  mt-2 border-bottom border-2 "
+                        placeholder="Enter Email">
+                    <p id="err1" class="pb-3 mt-1 alert alert-danger text-danger">Enter valid email. *Ex: xxx@yyy.zzz
+                    </p>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <input id="inp2" type="text"
+                        class="form-control text-white-50 rounded-0 bg-black  mt-2 border-bottom border-2 "
+                        placeholder="Enter phone">
+                    <p id="err2" class="pb-3 mt-1 alert alert-danger text-danger">Enter valid Phone Number</p>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <input id="inp3" type="text"
+                        class="form-control text-white-50 rounded-0 bg-black  mt-2 border-bottom border-2 "
+                        placeholder="Enter Age">
+                    <p id="err3" class="pb-3 mt-1 alert alert-danger text-danger">Enter valid Age</p>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <input id="inp4" type="password"
+                        class="form-control text-white-50 rounded-0 bg-black  mt-2 border-bottom border-2 "
+                        placeholder="Enter Password">
+                    <p id="err4" class="pb-3 mt-1 alert alert-danger text-danger">Enter valid password *Minimum eight
+                        characters, at least one letter and one number:*</p>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <input id="inp5" type="password"
+                        class="form-control text-white-50 rounded-0 bg-black  mt-2 border-bottom border-2 "
+                        placeholder="Enter RePassword">
+                    <p id="err5" class="pb-3 mt-1 alert alert-danger text-danger">Enter valid Repassword</p>
+                </div>
+                <button type="submit" disabled id="submitBtn"
+                    class=" my-2 mx-auto btn btn-outline-danger">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- /// -->
+
+    <!-- search -->
+    <div id="search">
+        <div class="mt-2">
+            <div class="row gy-3">
+                <div class="w-90">
+                    <div class="col-md-6 ">
+                        <input id="inp6" type="text"
+                            class="form-control text-white-50 rounded-0 bg-black border-bottom border-2"
+                            placeholder="Search By Name">
+                    </div>
+                    <div class="col-md-6">
+                        <input id="inp7" type="text" maxlength="1"
+                            class="form-control text-white-50 rounded-0 bg-black border-bottom border-2"
+                            placeholder="Search By First Letter...">
+                    </div>
+                </div>
+                <div id="searchRow" class="row w-85 mt-5 gy-4"></div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- /// -->
+
+    <!-- def -->
+    <div id="mainPage" class="mt-5 ">
+        <h2 class="text-danger ms-5 text-center">Home <span class="text-white fw-bolder">Page</span></h2>
+        <div class=" pt-5">
+            <div id="defRow" class="w-85 row gy-4">
+
+            </div>
+        </div>
+    </div>
+    <!-- /// -->
+
+    <!-- lastP -->
+    <div id="lastPage" class="mt-5 ">
+        <div class=" pt-5">
+            <div id="lastRow" class="w-85 row gy-4">
+
+            </div>
+        </div>
+    </div>
+    <!-- /// -->
+
+    <!-- category -->
+    <div id="categoryPage" class="mt-5">
+        <h2 class="text-danger ms-5 text-center">All <span class="text-white fw-bolder">Categories</span></h2>
+        <div class=" pt-5">
+            <div id="categoryRow" class="w-85 row gy-4">
+
+            </div>
+        </div>
+    </div>
+    <!-- /// -->
+
+
+    <!-- area -->
+    <div id="areaPage" class="mt-5">
+        <div class=" pt-5">
+            <div id="areaRow" class="w-85 row gy-4">
+
+            </div>
+        </div>
+    </div>
+    <!-- /// -->
+
+    <!-- modal -->
+    <div>
+        <div id="mod" class="row">
+        </div>
+    </div>
+    <!-- /// -->
+
+    <!-- ingredients -->
+    <div id="ingredientsPage" class="mt-5">
+        <div class=" pt-5">
+            <div id="ingredientsRow" class="w-85 row gy-4">
+
+            </div>
+        </div>
+    </div>
+    <!-- /// -->
+
+    <!-- loading -->
+    <div class="loading position-fixed justify-content-center align-items-center">
+		<i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+	</div>
+    <div class="loading-page position-fixed justify-content-center align-items-center">
+		<i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+	</div>
+    <!-- /// -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/jquery-3.6.1.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
